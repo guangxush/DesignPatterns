@@ -7,7 +7,7 @@ import factory.product.PenCore;
  * @author: guangxush
  * @create: 2019/07/06
  */
-public class BlackBallCore extends BallPen{
+public class BlackBallPen extends BallPen{
 
     @Override
     public PenCore getPenCore(){

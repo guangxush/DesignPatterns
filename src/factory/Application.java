@@ -1,7 +1,7 @@
 package factory;
 
 import factory.creator.BallPen;
-import factory.creator.BlackBallCore;
+import factory.creator.BlackBallPen;
 import factory.creator.BlueBallPen;
 import factory.creator.RedBallPen;
 import factory.product.PenCore;
@@ -21,7 +21,7 @@ public class Application {
         penCore = ballPen.getPenCore();
         penCore.writeWord("Hello");
 
-        ballPen = new BlackBallCore();
+        ballPen = new BlackBallPen();
         penCore = ballPen.getPenCore();
         penCore.writeWord("ni hao!");
     }
