@@ -2,17 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f48477f2-d033-41f1-95b9-6ddfdcdd5d24" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/observer/ObserverTwo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/observer/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/observer/SubjectTwo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/observer/customer/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/observer/customer/CustomerOne.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/observer/customer/CustomerTwo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/observer/shop/ShopSubject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/multisubject/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/multisubject/Observer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/multisubject/Subject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/multisubject/observer/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/multisubject/subject/TravelAgency.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/multisubject/subject/WeatherSubject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/observer/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/observer/student/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/observer/SeekJobCenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/observer/jobcenter/SeekJobCenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/observer/Subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/observer/Subject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/observer/pull/shop/ShopSubject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/observer/pull/shop/ShopSubject.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,16 +24,37 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/observer/Subject.java">
+        <entry file="file://$PROJECT_DIR$/src/observer/push/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="12" column="26" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="12" selection-end-column="26" />
+            <state relative-caret-position="210">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/observer/SubjectTwo.java">
+        <entry file="file://$PROJECT_DIR$/src/observer/pull/Subject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/observer/multisubject/Observer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/observer/multisubject/Subject.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="126">
               <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
@@ -45,51 +63,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/observer/ObserverTwo.java">
+        <entry file="file://$PROJECT_DIR$/src/observer/multisubject/subject/WeatherSubject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/observer/shop/ShopSubject.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="41" column="27" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
+            <state relative-caret-position="63">
+              <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#345#346#0" expanded="true" />
-                <element signature="e#406#407#0" expanded="true" />
-                <element signature="e#1291#1292#0" expanded="true" />
-                <element signature="e#1323#1324#0" expanded="true" />
-                <element signature="e#1358#1359#0" expanded="true" />
-                <element signature="e#1389#1390#0" expanded="true" />
-                <element signature="e#1424#1425#0" expanded="true" />
-                <element signature="e#1455#1456#0" expanded="true" />
+                <element signature="e#409#410#0" expanded="true" />
+                <element signature="e#454#455#0" expanded="true" />
+                <element signature="e#1365#1366#0" expanded="true" />
+                <element signature="e#1399#1400#0" expanded="true" />
+                <element signature="e#1439#1440#0" expanded="true" />
+                <element signature="e#1474#1475#0" expanded="true" />
+                <element signature="e#1512#1513#0" expanded="true" />
+                <element signature="e#1549#1550#0" expanded="true" />
+                <element signature="e#1587#1588#0" expanded="true" />
+                <element signature="e#1624#1625#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/observer/customer/CustomerOne.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="467">
-              <caret line="28" column="5" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="28" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/observer/customer/CustomerTwo.java">
+        <entry file="file://$PROJECT_DIR$/src/observer/multisubject/observer/Person.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="483">
-              <caret line="27" column="96" selection-start-line="27" selection-start-column="96" selection-end-line="27" selection-end-column="96" />
+              <caret line="25" column="65" selection-start-line="25" selection-start-column="65" selection-end-line="25" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -98,28 +96,37 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/observer/customer/Application.java">
+        <entry file="file://$PROJECT_DIR$/src/observer/multisubject/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+            <state relative-caret-position="336">
+              <caret line="16" column="44" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/observer/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="84">
-                <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-              </first_editor>
-              <second_editor />
+        <entry file="file://$PROJECT_DIR$/src/observer/multisubject/subject/TravelAgency.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="211">
+              <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#361#362#0" expanded="true" />
+                <element signature="e#406#407#0" expanded="true" />
+                <element signature="e#1202#1203#0" expanded="true" />
+                <element signature="e#1238#1239#0" expanded="true" />
+                <element signature="e#1273#1274#0" expanded="true" />
+                <element signature="e#1304#1305#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/observer/Observer.java">
+        <entry file="file://$PROJECT_DIR$/src/observer/pull/Observer.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="126">
               <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
@@ -128,12 +135,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/observer/jobcenter/SeekJobCenter.java">
+        <entry file="file://$PROJECT_DIR$/src/observer/pull/shop/ShopSubject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="467">
-              <caret line="56" column="5" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="56" selection-end-column="5" />
+            <state relative-caret-position="384">
+              <caret line="43" column="9" lean-forward="true" selection-start-line="39" selection-start-column="8" selection-end-line="43" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#423#424#0" expanded="true" />
+                <element signature="e#1291#1292#0" expanded="true" />
+                <element signature="e#1323#1324#0" expanded="true" />
+                <element signature="e#1358#1359#0" expanded="true" />
+                <element signature="e#1389#1390#0" expanded="true" />
+                <element signature="e#1424#1425#0" expanded="true" />
+                <element signature="e#1455#1456#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -156,19 +170,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/factory/creator/BallPen.java" />
-        <option value="$PROJECT_DIR$/src/factory/creator/RedBallPen.java" />
-        <option value="$PROJECT_DIR$/src/factory/product/RedPenCore.java" />
-        <option value="$PROJECT_DIR$/src/factory/product/BluePenCore.java" />
-        <option value="$PROJECT_DIR$/src/factory/product/BlackPenCore.java" />
-        <option value="$PROJECT_DIR$/src/factory/creator/BlueBallPen.java" />
-        <option value="$PROJECT_DIR$/src/factory/creator/BlackPenCore.java" />
-        <option value="$PROJECT_DIR$/src/factory/creator/BlackballCore.java" />
-        <option value="$PROJECT_DIR$/src/factory/Application.java" />
-        <option value="$PROJECT_DIR$/src/simplefactory/Fruit.java" />
-        <option value="$PROJECT_DIR$/src/simplefactory/Grape.java" />
-        <option value="$PROJECT_DIR$/src/simplefactory/Strawberry.java" />
-        <option value="$PROJECT_DIR$/src/simplefactory/BadFruitException.java" />
         <option value="$PROJECT_DIR$/src/simplefactory/FruitGardener.java" />
         <option value="$PROJECT_DIR$/src/abstractfactory/UpperClothes.java" />
         <option value="$PROJECT_DIR$/src/abstractfactory/Trousers.java" />
@@ -203,10 +204,23 @@
         <option value="$PROJECT_DIR$/src/observer/Observer.java" />
         <option value="$PROJECT_DIR$/src/observer/SubjectTwo.java" />
         <option value="$PROJECT_DIR$/src/observer/ObserverTwo.java" />
-        <option value="$PROJECT_DIR$/src/observer/shop/ShopSubject.java" />
         <option value="$PROJECT_DIR$/src/observer/customer/CustomerOne.java" />
-        <option value="$PROJECT_DIR$/src/observer/customer/CustomerTwo.java" />
         <option value="$PROJECT_DIR$/src/observer/customer/Application.java" />
+        <option value="$PROJECT_DIR$/src/observer/customer/CustomerTwo.java" />
+        <option value="$PROJECT_DIR$/src/observer/shop/ShopSubject.java" />
+        <option value="$PROJECT_DIR$/src/observer/push/Application.java" />
+        <option value="$PROJECT_DIR$/src/observer/pull/ObserverTwo.java" />
+        <option value="$PROJECT_DIR$/src/observer/pull/Observer.java" />
+        <option value="$PROJECT_DIR$/src/observer/pull/SubjectTwo.java" />
+        <option value="$PROJECT_DIR$/src/observer/pull/Subject.java" />
+        <option value="$PROJECT_DIR$/src/observer/pull/customer/Subject.java" />
+        <option value="$PROJECT_DIR$/src/observer/multisubject/Subject.java" />
+        <option value="$PROJECT_DIR$/src/observer/pull/shop/ShopSubject.java" />
+        <option value="$PROJECT_DIR$/src/observer/multisubject/Observer.java" />
+        <option value="$PROJECT_DIR$/src/observer/multisubject/subject/WeatherSubject.java" />
+        <option value="$PROJECT_DIR$/src/observer/multisubject/observer/Person.java" />
+        <option value="$PROJECT_DIR$/src/observer/multisubject/subject/TravelAgency.java" />
+        <option value="$PROJECT_DIR$/src/observer/multisubject/Application.java" />
       </list>
     </option>
   </component>
@@ -248,6 +262,29 @@
               <item name="DesignPatterns" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="observer" type="462c0819:PsiDirectoryNode" />
+              <item name="multisubject" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DesignPatterns" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DesignPatterns" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="observer" type="462c0819:PsiDirectoryNode" />
+              <item name="multisubject" type="462c0819:PsiDirectoryNode" />
+              <item name="subject" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DesignPatterns" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DesignPatterns" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="observer" type="462c0819:PsiDirectoryNode" />
+              <item name="pull" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DesignPatterns" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DesignPatterns" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="observer" type="462c0819:PsiDirectoryNode" />
+              <item name="pull" type="462c0819:PsiDirectoryNode" />
               <item name="customer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -255,21 +292,8 @@
               <item name="DesignPatterns" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="observer" type="462c0819:PsiDirectoryNode" />
-              <item name="jobcenter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DesignPatterns" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DesignPatterns" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="observer" type="462c0819:PsiDirectoryNode" />
+              <item name="pull" type="462c0819:PsiDirectoryNode" />
               <item name="shop" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DesignPatterns" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DesignPatterns" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="observer" type="462c0819:PsiDirectoryNode" />
-              <item name="student" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -282,11 +306,15 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/observer/pull/customer" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="abstractfactory" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/observer/pull/customer" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -321,6 +349,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="decorator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="observer.multisubject.Application" />
+      <module name="DesignPatterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="observer.multisubject.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -391,9 +432,9 @@
       <list>
         <item itemvalue="Application.Application (3)" />
         <item itemvalue="Application.Application (3)" />
+        <item itemvalue="Application.Application (3)" />
         <item itemvalue="Application.Application (2)" />
         <item itemvalue="Application.Application (1)" />
-        <item itemvalue="Application.Application" />
       </list>
     </recent_temporary>
   </component>
@@ -410,12 +451,12 @@
       <workItem from="1562394122210" duration="13064000" />
       <workItem from="1562463989438" duration="807000" />
       <workItem from="1562464944771" duration="3391000" />
-      <workItem from="1564280014570" duration="5388000" />
+      <workItem from="1564280014570" duration="7416000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22650000" />
+    <option name="totallyTimeSpent" value="24678000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="320" y="-1057" width="1920" height="1057" extended-state="6" />
@@ -456,25 +497,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#64#65#0" expanded="true" />
-            <element signature="e#114#115#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/abstractfactory/CowboyUpperClothes.kt" />
-    <entry file="file://$PROJECT_DIR$/src/simplefactory/Fruit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="6" selection-start-line="6" selection-end-line="21" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/simplefactory/Apple.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="381">
@@ -715,7 +737,7 @@
     <entry file="file://$PROJECT_DIR$/A.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/observer/student/NomalStudent.java">
+    <entry file="file://$PROJECT_DIR$/src/observer/push/student/NomalStudent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="15" column="19" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="19" />
@@ -725,20 +747,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/observer/student/UniversityStudent.java">
+    <entry file="file://$PROJECT_DIR$/src/observer/push/student/UniversityStudent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="771">
           <caret line="37" column="1" lean-forward="true" selection-start-line="13" selection-end-line="37" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/observer/student/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -752,28 +767,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/observer/Observer.java">
+    <entry file="file://$PROJECT_DIR$/src/observer/pull/customer/CustomerOne.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+        <state relative-caret-position="467">
+          <caret line="27" column="5" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="27" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/observer/Subject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="26" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="12" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/observer/ObserverTwo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/observer/jobcenter/SeekJobCenter.java">
+    <entry file="file://$PROJECT_DIR$/src/observer/push/jobcenter/SeekJobCenter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="467">
           <caret line="56" column="5" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="56" selection-end-column="5" />
@@ -783,14 +787,78 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/observer/shop/ShopSubject.java">
+    <entry file="file://$PROJECT_DIR$/src/observer/pull/customer/Customer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="41" column="27" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
+        <state relative-caret-position="399">
+          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#345#346#0" expanded="true" />
-            <element signature="e#406#407#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/observer/pull/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/observer/push/Observer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/observer/push/Subject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/observer/push/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/observer/pull/Observer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/observer/pull/Subject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/observer/multisubject/Subject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/observer/pull/shop/ShopSubject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="43" column="9" lean-forward="true" selection-start-line="39" selection-start-column="8" selection-end-line="43" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#423#424#0" expanded="true" />
             <element signature="e#1291#1292#0" expanded="true" />
             <element signature="e#1323#1324#0" expanded="true" />
             <element signature="e#1358#1359#0" expanded="true" />
@@ -801,37 +869,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/observer/customer/CustomerOne.java">
+    <entry file="file://$PROJECT_DIR$/src/observer/multisubject/Observer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="28" column="5" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="28" selection-end-column="5" />
+        <state relative-caret-position="147">
+          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/observer/multisubject/subject/WeatherSubject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#409#410#0" expanded="true" />
+            <element signature="e#454#455#0" expanded="true" />
+            <element signature="e#1365#1366#0" expanded="true" />
+            <element signature="e#1399#1400#0" expanded="true" />
+            <element signature="e#1439#1440#0" expanded="true" />
+            <element signature="e#1474#1475#0" expanded="true" />
+            <element signature="e#1512#1513#0" expanded="true" />
+            <element signature="e#1549#1550#0" expanded="true" />
+            <element signature="e#1587#1588#0" expanded="true" />
+            <element signature="e#1624#1625#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/observer/SubjectTwo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/observer/customer/CustomerTwo.java">
+    <entry file="file://$PROJECT_DIR$/src/observer/multisubject/observer/Person.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
-          <caret line="27" column="96" selection-start-line="27" selection-start-column="96" selection-end-line="27" selection-end-column="96" />
+          <caret line="25" column="65" selection-start-line="25" selection-start-column="65" selection-end-line="25" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/observer/customer/Application.java">
+    <entry file="file://$PROJECT_DIR$/src/observer/multisubject/subject/TravelAgency.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+        <state relative-caret-position="211">
+          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#361#362#0" expanded="true" />
+            <element signature="e#406#407#0" expanded="true" />
+            <element signature="e#1202#1203#0" expanded="true" />
+            <element signature="e#1238#1239#0" expanded="true" />
+            <element signature="e#1273#1274#0" expanded="true" />
+            <element signature="e#1304#1305#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/observer/multisubject/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="44" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
