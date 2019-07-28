@@ -1,4 +1,7 @@
-package observer;
+package observer.jobcenter;
+
+import observer.Observer;
+import observer.Subject;
 
 import java.util.ArrayList;
 
