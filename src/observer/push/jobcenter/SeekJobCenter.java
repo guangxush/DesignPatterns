@@ -1,7 +1,7 @@
-package observer.jobcenter;
+package observer.push.jobcenter;
 
-import observer.Observer;
-import observer.Subject;
+import observer.push.Observer;
+import observer.push.Subject;
 
 import java.util.ArrayList;
 

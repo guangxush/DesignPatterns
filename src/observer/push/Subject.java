@@ -1,4 +1,6 @@
-package observer;
+package observer.push;
+
+import observer.push.Observer;
 
 /**
  * @author: guangxush

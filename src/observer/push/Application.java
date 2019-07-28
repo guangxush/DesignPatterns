@@ -1,6 +1,8 @@
-package observer.student;
+package observer.push;
 
-import observer.jobcenter.SeekJobCenter;
+import observer.push.jobcenter.SeekJobCenter;
+import observer.push.student.NomalStudent;
+import observer.push.student.UniversityStudent;
 
 /**
  * @author: guangxush

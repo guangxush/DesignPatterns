@@ -1,7 +1,7 @@
-package observer.student;
+package observer.push.student;
 
-import observer.Observer;
-import observer.Subject;
+import observer.push.Observer;
+import observer.push.Subject;
 
 import java.io.File;
 import java.io.IOException;

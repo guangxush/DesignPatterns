@@ -1,20 +1,19 @@
-package observer.customer;
+package observer.pull.customer;
 
-import observer.ObserverTwo;
-import observer.Subject;
-import observer.SubjectTwo;
-import observer.shop.ShopSubject;
+import observer.pull.Observer;
+import observer.pull.Subject;
+import observer.pull.shop.ShopSubject;
 
 /**
  * @author: guangxush
  * @create: 2019/07/28
  */
-public class CustomerOne implements ObserverTwo {
-    private SubjectTwo subject;
+public class CustomerOne implements Observer {
+    private Subject subject;
     private String goodName;
     private String personName;
 
-    public CustomerOne(SubjectTwo subject, String personName){
+    public CustomerOne(Subject subject, String personName){
         this.subject = subject;
         this.personName = personName;
         subject.addObserve(this);

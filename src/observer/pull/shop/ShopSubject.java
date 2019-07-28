@@ -1,7 +1,7 @@
-package observer.shop;
+package observer.pull.shop;
 
-import observer.ObserverTwo;
-import observer.SubjectTwo;
+import observer.pull.Observer;
+import observer.pull.Subject;
 
 import java.util.ArrayList;
 
@@ -9,27 +9,27 @@ import java.util.ArrayList;
  * @author: guangxush
  * @create: 2019/07/28
  */
-public class ShopSubject implements SubjectTwo {
+public class ShopSubject implements Subject {
 
 
     private String goodsName;
     private double oldPrice, newPrice;
-    private ArrayList<ObserverTwo> customerList;
+    private ArrayList<Observer> customerList;
 
     public ShopSubject(){
-        this.customerList = new ArrayList<ObserverTwo>();
+        this.customerList = new ArrayList<Observer>();
     }
 
 
     @Override
-    public void addObserve(ObserverTwo observer) {
+    public void addObserve(Observer observer) {
         if(!customerList.contains(observer)){
             customerList.add(observer);
         }
     }
 
     @Override
-    public void deleteObserver(ObserverTwo observer) {
+    public void deleteObserver(Observer observer) {
         if(!customerList.contains(observer)){
             customerList.remove(observer);
         }
@@ -38,7 +38,7 @@ public class ShopSubject implements SubjectTwo {
     @Override
     public void notifyObserver() {
             for(int i=0;i<customerList.size();i++){
-                ObserverTwo observer = customerList.get(i);
+                Observer observer = customerList.get(i);
                 // 仅仅通知观察者，不提供数据
                 observer.update();
             }

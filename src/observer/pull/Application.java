@@ -1,6 +1,8 @@
-package observer.customer;
+package observer.pull;
 
-import observer.shop.ShopSubject;
+import observer.pull.customer.CustomerOne;
+import observer.pull.customer.Customer;
+import observer.pull.shop.ShopSubject;
 
 /**
  * @author: guangxush
@@ -10,7 +12,7 @@ public class Application {
     public static void main(String[] args) {
         ShopSubject shop = new ShopSubject();
         CustomerOne customerOne = new CustomerOne(shop, "张三");
-        CustomerTwo customerTwo = new CustomerTwo(shop, "李四");
+        Customer customerTwo = new Customer(shop, "李四");
         shop.setDiscountGoods("Photo", 123, 223);
         shop.setDiscountGoods("iPhone", 8999, 5999);
     }
