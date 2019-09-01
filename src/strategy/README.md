@@ -5,7 +5,7 @@
 策略：封装算法标识的接口是策略
 具体策略：实现接口的策略是具体策略
 上下文：依赖于策略接口的类
-![策略模式](https://upload-images.jianshu.io/upload_images/7632302-d9e5e62806c430cb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![策略模式](https://github.com/guangxush/iTechHeart/blob/master/image/DesignPatterns/strategy1.png)
 
 ## 代码设计
 设计一个计算成绩的接口
