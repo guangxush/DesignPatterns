@@ -18,7 +18,7 @@
 3. 具体主题：具体主题是实现主题接口的一个实例；
 4. 具体观察者：是实现观察者接口的一个实例；
 观察者模式的UML类图：
-![观察者模式](https://upload-images.jianshu.io/upload_images/7632302-087c1d8ce97f608e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![观察者模式](https://github.com/guangxush/iTechHeart/blob/master/image/DesignPatterns/observer1.png)
 
 ## 代码实现
 以下是一个简单的求职者订阅工作中心的观察者模式，观察者通过notify给订阅了信息的求职者发送信息。
