@@ -9,11 +9,11 @@
 - 具体装饰：是一个非抽象的子类，具体装饰的实例被称为“装饰者”
 
 ## 类图
-![装饰者模式类图](https://upload-images.jianshu.io/upload_images/7632302-ae925cb821b45bfa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![装饰者模式类图](https://github.com/guangxush/iTechHeart/blob/master/image/DesignPatterns/decorator1.png)
 
 ## 代码
 
-![代码结构](https://upload-images.jianshu.io/upload_images/7632302-92536b6e2d193424.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![代码结构](https://github.com/guangxush/iTechHeart/blob/master/image/DesignPatterns/decorator2.png)
 Bird
 ```
 public abstract class Bird {
@@ -92,7 +92,7 @@ public class Application {
     }
 }
 ```
-![运行结果](https://upload-images.jianshu.io/upload_images/7632302-1f9268861af092bb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![运行结果](https://github.com/guangxush/iTechHeart/blob/master/image/DesignPatterns/decorator3.png)
 
 ## 完整源码
 [源码参考](https://github.com/guangxush/DesignPatterns)
