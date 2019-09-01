@@ -5,7 +5,7 @@
 - 抽象工厂模式：又称为工具箱模式
 ## 2. 简单工厂模式
 简单工厂模式是类的创建模式，又称为静态工厂方法，是有一个工厂的对象决定创建哪一类具体的产品。
-![](https://upload-images.jianshu.io/upload_images/7632302-9640f035a0a18036.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://github.com/guangxush/iTechHeart/blob/master/image/DesignPatterns/factory1.png)
 
 这里有一个水果类，水果类下面有不同的子类实现
 Fruit:
@@ -102,11 +102,11 @@ public class FruitGardener {
 }
 ```
 总结一下，简单工厂模式的结构为：
-![](https://upload-images.jianshu.io/upload_images/7632302-8f0e8e5f290a2f39.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://github.com/guangxush/iTechHeart/blob/master/image/DesignPatterns/factory2.png)
 
 ## 3.  工厂模式
 工厂模式又成为动态工厂模式，由于静态工厂模式的缺点是，有新的类加入时需要修改工厂类代码，不符合开闭原则，因此引入类动态工厂模式，使用多态的方式去创建，具体创建类的过程交给子类去做，工厂和产品之间是一种平级的等级结构。
-![](https://upload-images.jianshu.io/upload_images/7632302-3c1c9cae4774fc20.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://github.com/guangxush/iTechHeart/blob/master/image/DesignPatterns/factory3.png)
 工厂模式存在四个角色：抽象产品、具体产品、构造者、具体构造者
 这里采用一个简单的例子去说明
 抽象产品类：PenCore 钢笔：颜色+书写
@@ -183,17 +183,17 @@ create the pen with the black.
 write with black: ni hao!
 ```
 其实Java的集合框架也有采用这种设计模式:
-![](https://upload-images.jianshu.io/upload_images/7632302-6777180366afb6dd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://github.com/guangxush/iTechHeart/blob/master/image/DesignPatterns/factory4.png)
 
 
 综上所述，工厂模式的结构为：
-![](https://upload-images.jianshu.io/upload_images/7632302-71efcc9c7ba1b8b6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://github.com/guangxush/iTechHeart/blob/master/image/DesignPatterns/factory5.png)
 
 ## 4. 抽象工厂模式
 
 抽象工厂模式是工厂模式中最具一般性的一种形态，提供一个创建一系列或相互依赖对象的接口，而无须制定他们具体的类。
 它与工厂模式的最大区别是：工厂模式面对一个产品等级的结构，而抽象工厂模式面对多个产品等级结构。
-![](https://upload-images.jianshu.io/upload_images/7632302-a56f33644a702ec8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://github.com/guangxush/iTechHeart/blob/master/image/DesignPatterns/factory6.png)
 举个例子，两个抽象产品一个裤子一个上衣：
 裤子抽象产品：
 ```
@@ -345,7 +345,7 @@ public class Application {
 ```
 总结抽象工厂的模式为：
 
-![](https://upload-images.jianshu.io/upload_images/7632302-8a430c2aa9372c4a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://github.com/guangxush/iTechHeart/blob/master/image/DesignPatterns/factory7.png)
 因此抽象工厂模式适用于以下情况：
 1. 一个系统不应当依赖与产品类实力如何被创建、组合和表达的细节；
 2. 这个系统中有多于一个的产品族，而系统只消费其中某一族的产品；

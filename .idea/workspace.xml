@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f48477f2-d033-41f1-95b9-6ddfdcdd5d24" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/decorator/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/decorator/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -98,24 +99,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/decorator/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="515">
-                <caret line="99" selection-start-line="99" selection-end-line="99" />
+              <first_editor relative-caret-position="312">
+                <caret line="94" column="91" selection-start-line="94" selection-start-column="91" selection-end-line="94" selection-end-column="91" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/observer/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="396">
-                <caret line="20" column="135" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="135" />
+              <first_editor relative-caret-position="333">
+                <caret line="17" column="22" lean-forward="true" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
               </first_editor>
               <second_editor />
             </state>
@@ -188,8 +189,8 @@
         <option value="$PROJECT_DIR$/src/strategy/Application.java" />
         <option value="$PROJECT_DIR$/src/strategy/README.md" />
         <option value="$PROJECT_DIR$/src/factory/README.md" />
-        <option value="$PROJECT_DIR$/src/decorator/README.md" />
         <option value="$PROJECT_DIR$/src/observer/README.md" />
+        <option value="$PROJECT_DIR$/src/decorator/README.md" />
       </list>
     </option>
   </component>
@@ -400,12 +401,12 @@
       <workItem from="1562463989438" duration="807000" />
       <workItem from="1562464944771" duration="3391000" />
       <workItem from="1564280014570" duration="10714000" />
-      <workItem from="1567303896937" duration="535000" />
+      <workItem from="1567303896937" duration="818000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28511000" />
+    <option name="totallyTimeSpent" value="28794000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="950" extended-state="6" />
@@ -836,21 +837,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/decorator/README.md">
+    <entry file="file://$PROJECT_DIR$/src/observer/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="515">
-            <caret line="99" selection-start-line="99" selection-end-line="99" />
+          <first_editor relative-caret-position="333">
+            <caret line="17" column="22" lean-forward="true" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/observer/README.md">
+    <entry file="file://$PROJECT_DIR$/src/decorator/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="396">
-            <caret line="20" column="135" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="135" />
+          <first_editor relative-caret-position="312">
+            <caret line="94" column="91" selection-start-line="94" selection-start-column="91" selection-end-line="94" selection-end-column="91" />
           </first_editor>
           <second_editor />
         </state>
