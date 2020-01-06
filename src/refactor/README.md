@@ -65,9 +65,9 @@
 - 过多的注释：将不清晰的代码加入注释，通过重构减少过多的注释
 
 
-### 重新组织函数
+### 1.重新组织函数
 
-#### 提炼函数
+#### 1.1提炼函数
 
 1. 案例1
 
@@ -147,7 +147,7 @@ void printBanner(){
 }
 ```
 
-2. 有局部变量的情况
+3. 有局部变量的情况
 
 ```java
 void printOwing(){
@@ -198,7 +198,7 @@ double getOutstanding(){
 }
 ```
 
-3. 有参数的情况
+4. 有参数的情况
 
 ```java
 void printOwing(double previousAmount){
@@ -225,7 +225,7 @@ double getOutstanding(double initialValue){
 }
 ```
 
-#### 内联函数
+#### 1.2内联函数
 
 原来的代码
 
@@ -247,7 +247,7 @@ int getRating() {
 }
 ```
 
-#### 内联临时变量
+#### 1.3内联临时变量
 
 重构前的代码
 
@@ -262,7 +262,7 @@ return (basePrice > 1000)
 return anOrder.basePrice() > 1000;
 ```
 
-#### 以查询取代临时变量
+#### 1.4以查询取代临时变量
 
 重构前的代码
 
@@ -308,7 +308,7 @@ private double discpuntFactor(){
 }
 ```
 
-#### 引入解释性的变量
+#### 1.5引入解释性的变量
 
 将复杂的表达式转换成临时变量来解释意图
 
@@ -334,7 +334,7 @@ if(isMacOS && isIEBrower && wasInitialized && wasResized){
 }
 ```
 
-#### 分解临时变量
+#### 1.6分解临时变量
 
 
 重构前的代码
@@ -355,7 +355,7 @@ final double area = _height * _width;
 System.out.println(area);
 ```
 
-#### 移除对参数的赋值
+#### 1.7移除对参数的赋值
 
 
 ```java
@@ -378,7 +378,7 @@ int discount (int inputVal, int quantity, int yearToDate){
 }
 ```
 
-#### 以函数对象取代函数
+#### 1.8以函数对象取代函数
 
 ```java
 class Account {
@@ -454,7 +454,7 @@ void importantThing(){
 ```
 
 
-#### 替换算法
+#### 1.9替换算法
 
 将函数本体替换为另一个算法
 
@@ -490,7 +490,7 @@ String foundPerson(String[] people){
 }
 ```
 
-#### 搬移函数
+#### 1.10搬移函数
 
 如果一个类有太多行为或者一个类与另一个类有太多合作而形成的高度耦合，就会使用搬迁函数，即在最常
 引用的类里面建立一个有着类似行为的新函数，将旧函数变成一个单纯的委托函数或者完全移除
@@ -573,7 +573,7 @@ class AccountType{
 }
 ```
 
-#### 搬迁字段
+#### 1.11搬迁字段
 
 在目标新类中创建一个字段，修改源字段的所有用户，让他们改用新字段
 
@@ -621,7 +621,7 @@ class Account {
 }
 ```
 
-#### 提炼类
+#### 1.12提炼类
 
 建立一个新的类，将相关的字段的函数从旧类搬迁到新类，目的是为了明确每个类的职责
 
@@ -690,7 +690,7 @@ class Person{
 
 电话号码类需不需要修改，会不会存在事务并发问题，需要去考虑
 
-#### 将类内联化
+#### 1.13将类内联化
 
 ```java
 class Person{
@@ -756,7 +756,7 @@ class Person{
 ```
 
 
-#### 隐藏委托关系
+#### 1.14隐藏委托关系
 
 ```java
 class Person{
@@ -803,7 +803,7 @@ public Person getManager(){
 manager = john.getManager();
 ```
 
-#### 移除委托函数
+#### 1.15移除委托函数
 
 上述方法虽然简单，但是如果大量函数需要这么做，会增加过多的委托关系
 因此还是可以回到原来的方式
@@ -840,7 +840,7 @@ manager = john.getDepartMent().getManager();
 ```
 
 
-#### 加入外加函数
+#### 1.16加入外加函数
 
 为提供服务的类增加一个函数，但是你无法修改这个类
 
@@ -859,7 +859,7 @@ private static Date newDay(Date arg){
 }
 ```
 
-#### 引入本地扩展
+#### 1.17引入本地扩展
 
 声明一个包装类
 
@@ -904,10 +904,10 @@ public boolean equals(Object arg){
 }
 ```
 
-### 重新组织数据
+### 2.重新组织数据
 
 
-#### 自封装字段
+#### 2.1自封装字段
 
 修改前的类
 ```java
@@ -1002,7 +1002,7 @@ class CappedRange extends IntRange {
 }
 ```
 
-#### 以对象取代数据值
+#### 2.2以对象取代数据值
 
 订单类
 
@@ -1076,7 +1076,7 @@ class Customer{
 ```
 
 
-#### 将值对象改为引用对象
+#### 2.3将值对象改为引用对象
 
 
 一个客户拥有不同的订单，多个订单共享同一个Customer时，需要在Customer中创建工厂函数。
@@ -1158,7 +1158,7 @@ class Customer {
 }
 ```
 
-#### 将引用对象改为值对象
+#### 2.4将引用对象改为值对象
 
 货币种类
 
@@ -1216,7 +1216,7 @@ public int hashCode(){
 ```
 
 
-#### 以对象取代数组
+#### 2.5以对象取代数组
 
 ```java
 String[] row = new String[3];
@@ -1232,7 +1232,7 @@ row.setWins("15");
 int wins= row.getWins();
 ```
 
-#### 复制""被监视数据"
+#### 2.6复制""被监视数据"
 
 将代码分类为模型-视图-控制器
 
@@ -1410,7 +1410,7 @@ class Interval extends Observable {
 ```
 
 
-#### 将单向关联改为双向关联
+#### 2.7将单向关联改为双向关联
 
 添加一个反向指针，并使修改函数能够同时更新两条连接
 
@@ -1480,7 +1480,7 @@ class Customer {
 }
 ```
 
-#### 将双向关联改为单向关联
+#### 2.8将双向关联改为单向关联
 
 原来的例子
 ```java
@@ -1517,7 +1517,7 @@ class Order {
 ```
 
 
-#### 以字面常量取代魔法数
+#### 2.9以字面常量取代魔法数
 
 ```java
 double potentialEnergy(double mass, double heigh){
@@ -1532,7 +1532,7 @@ double potentialEnergy(double mass, double heigh){
 }
 ```
 
-#### 封装字段
+#### 2.10封装字段
 
 ```java
 public String name;
@@ -1551,7 +1551,7 @@ public void setName(String arg){
 ```
 
 
-#### 封装集合
+#### 2.11封装集合
 
 ```java
 class Person {
@@ -1595,7 +1595,7 @@ kent.getCourse().addElement(new Course("scra", false));
 kent.addCourse(new Course("scra", false));
 ```
 
-#### 以数据类取代记录
+#### 2.12以数据类取代记录
 
 ```java
 class Person {
@@ -1714,7 +1714,7 @@ class BloodGroup {
 ```
 
 
-#### 以子类取代类型码
+#### 2.13以子类取代类型码
 
  
 原来的代码
@@ -1782,7 +1782,7 @@ abstract class Employee{
 }
 ```
 
-#### 以State/Strategy取代类型码
+#### 2.14以State/Strategy取代类型码
 
 ```java
 abstract class Person {
@@ -1849,9 +1849,9 @@ class Female extends Person{
 ```
 
 
-### 简化条件表达式
+### 3.简化条件表达式
 
-#### 分解条件表达式
+#### 3.1分解条件表达式
 
 ```java
 if(date.before(SUMMER_START) || date.fater(SUMER_END)){
@@ -1873,7 +1873,7 @@ if(noSummer(date)){
 
 提高代码的可读性
 
-#### 合并条件表达式
+#### 3.2合并条件表达式
 
 ```java
 double disabilityAmount(){
@@ -1895,7 +1895,7 @@ boolean isNotEligableForDisability(){
 }
 ```
 
-#### 合并重复的条件片段
+#### 3.3合并重复的条件片段
 
 ```java
 if(isSpecialDeal()){
@@ -1918,7 +1918,7 @@ if(isSpecialDeal()){
 send();
 ```
 
-#### 移除控制标记
+#### 3.4移除控制标记
 
 ```java
 void checkSecurity(String[] people){
@@ -2017,7 +2017,7 @@ String foundMisCrent(String[] people){
 }
 ```
 
-#### 以卫语句取代嵌套的条件表达式
+#### 3.5以卫语句取代嵌套的条件表达式
 
 ```java
 double getPayAmount(){
@@ -2045,8 +2045,7 @@ double getPayAmount(){
 }
 ```
 
-
-#### 以多态取代条件表达式
+#### 3.6以多态取代条件表达式
 
 ```java
 class Employee{
@@ -2097,7 +2096,7 @@ class Saleman extends Employee{
 }
 ```
 
-#### 引入Null对象
+#### 3.7引入Null对象
 
 判断null的表达式太多了
 
@@ -2128,7 +2127,7 @@ class Customer{
 }
 ```
 
-#### 引入断言
+#### 3.8引入断言
 
 ```java
 double getExpenseLimit(){
@@ -2146,9 +2145,9 @@ double getExpenseLimit(){
 ```
 
 
-### 简化函数调用
+### 4.简化函数调用
 
-#### 函数改名
+#### 4.1函数改名
 
 ```java
 public String getTelePhoneNumber(){
@@ -2166,7 +2165,7 @@ class Person{
 }
 ```
 
-#### 添加参数
+#### 4.2添加参数
 
 ```java
 public int getContact(){
@@ -2182,7 +2181,7 @@ public int getContact(Date date){
 }
 ```
 
-#### 移除参数
+#### 4.3移除参数
 
 ```java
 public int getContact(){
@@ -2190,8 +2189,7 @@ public int getContact(){
 }
 ```
 
-
-#### 将查询函数与修改函数分离
+#### 4.4将查询函数与修改函数分离
 
 ```java
 String foundMiscreant(String[] people){
@@ -2251,7 +2249,7 @@ void alert(){
 }
 ```
 
-#### 令函数携带参数
+#### 4.5令函数携带参数
 
 ```java
 class Employee{
@@ -2272,8 +2270,7 @@ void raise(double factor){
 }
 ```
 
-
-#### 以明确函数取代参数
+#### 4.6以明确函数取代参数
 
 ```java
 void setValue(String name, int value){
@@ -2299,7 +2296,7 @@ void setWeight(int arg){
 }
 ```
 
-#### 保证对象完整
+#### 4.7保证对象完整
 
 ```java
 int low = daysTempRange().getLow();
@@ -2313,7 +2310,7 @@ withinPlan = plan.withinRange(low, high);
 withinPlan = plan.withinRange(daysTempRange());
 ```
 
-#### 以函数取代参数
+#### 4.8以函数取代参数
 
 ```java
 int basePrice = quantity * itemPrice;
@@ -2327,7 +2324,7 @@ int basePrice = quantity * itemPrice;
 double finalPrice = discountedPrice(basePrice);
 ```
 
-#### 引入参数对象
+#### 4.9引入参数对象
 
 ```java
 Entry(Date satrt, Date end){
@@ -2349,7 +2346,7 @@ Entry(DateRange){
 }
 ```
 
-#### 移除设值函数
+#### 4.10移除设值函数
 
 ```java
 class Account{
@@ -2390,12 +2387,11 @@ class Account{
 }
 ```
 
-
-#### 隐藏函数
+#### 4.11隐藏函数
 
 降低函数的可见性
 
-#### 以工厂函数取代构造函数
+#### 4.12以工厂函数取代构造函数
 
 ```java
 Employee(int type){
@@ -2411,8 +2407,7 @@ static Emplyee create(int type){
 }
 ```
 
-
-#### 封装向下转型
+#### 4.13封装向下转型
 
 ```java
 Object lastReading(){
@@ -2426,7 +2421,7 @@ Reading lastReading(){
 }
 ```
 
-#### 以异常取代错误码
+#### 4.14以异常取代错误码
 
 ```java
 int withdraw(int amount){
@@ -2451,7 +2446,7 @@ void withdraw(int amount) throws BalanceException{
 }
 ```
 
-#### 以测试取代异常
+#### 4.15以测试取代异常
 
 ```java
 double getValueForPeriod(int periodNumber){
@@ -2473,17 +2468,17 @@ double getValueForPeriod(int periodNumber){
 ```
 
 
-### 处理概括关系
+### 5.处理概括关系
 
-#### 字段上移
+#### 5.1字段上移
 
 两个子类拥有相同的字段，可以将该字段上移到超类
 
-#### 函数上移
+#### 5.2函数上移
 
 如果函数在不同的子类产生完全相同的结果，可以上移到超类
 
-#### 构造函数本体上移
+#### 5.3构造函数本体上移
 
 在子类中有一些构造函数跟本体完全一致
 
@@ -2494,60 +2489,60 @@ public Manager(String name, String id, int grade){
 }
 ```
 
-#### 函数下移
+#### 5.4函数下移
 
 超类中某个函数只与一部分子类相关，将这个函数下放到相关的子类中
 
-#### 字段下移
+#### 5.5字段下移
 
 超类中的字段只被部分子类使用，下放到子类中
 
-#### 提炼子类
+#### 5.6提炼子类
 
 新建一个类，将部分特征提取到子类中
 
-#### 提炼超类
+#### 5.7提炼超类
 
 为两个类似的类提炼一个超类，将相同的特征放入超类
 
-#### 提炼接口
+#### 5.8提炼接口
 
 将相同的子集提炼到一个独立的接口中
 
-#### 折叠继承体系
+#### 5.9折叠继承体系
 
 超类和子类无太大的区别，将他们合为一体
 
-#### 塑造模板函数
+#### 5.10塑造模板函数
 
 有一些子类，其中相应的某些函数以相同的顺序执行类似的操作，但是各个操作细节上有所不同，将这些函数分别放入独立的函数中，并保持同样的签名，然后将这些函数上移到超类
 
-#### 以委托取代继承
+#### 5.11以委托取代继承
 
 在子类中新建一个字段用以保存超类，调整子类函数，令他改为委托函数，然后去掉两者的继承关系
 
 继承并不是最有效的方式，尤其对于超类中不适用于子类的情况。
 
-#### 以继承取代委托
+#### 5.12以继承取代委托
 
 如果在两个类之间需要太多的委托关系，并经常为了整个接口编写过多的委托函数时，可以采用继承代替委托类
 
 
-### 大型重构
+### 6.大型重构
 
-#### 梳理并分解继承体系
+#### 6.1梳理并分解继承体系
 
 建立两个继承体系，并通过委托让其中一个调用另一个
 
-#### 将过程化设计转换为对象设计
+#### 6.2将过程化设计转换为对象设计
 
 将数据记录变成对象，将大块行为切分成小块，并将行为移动到相关的对象中
 
-#### 将领域与表达/显示分离
+#### 6.3将领域与表达/显示分离
 
 采用MVC的设计模式进行解耦
 
-#### 提炼继承体系
+#### 6.4提炼继承体系
 
 建立继承体系，以一个子类表示一种特殊情况
 
