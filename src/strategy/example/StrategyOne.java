@@ -46,7 +46,7 @@ public class StrategyOne implements EncryptStrategy{
     }
 
     @Override
-    public void decryptFile(File file) {
+    public String decryptFile(File file) {
         try{
             byte[] a = password.getBytes();
             FileInputStream in = new FileInputStream(file);
@@ -59,11 +59,10 @@ public class StrategyOne implements EncryptStrategy{
                 c[i] = (byte)n;
             }
             in.close();
-            FileOutputStream out = new FileOutputStream(file);
-            out.write(c,0,m);
-            out.close();
+            return new String(c, 0, m);
         }catch (IOException exp){
             System.out.println(exp);
         }
+        return "";
     }
 }

@@ -97,3 +97,29 @@ public class Application {
 ## 完整源码
 [源码参考](https://github.com/guangxush/DesignPatterns)
 
+
+## 优点
+
+装饰模式相对于继承来说，满足"少用继承，多用组合"的基本原则，装饰者和被装饰者是松耦合的，满足"开闭原则"
+
+
+如果程序希望动态的增强某个类的功能而又不影响到其他类，可以用装饰模式，有利于系统的扩展和维护
+
+### 案例
+
+读取单词表
+
+1. 当前系统已经有了一个抽象类ReadWord,该类有一个抽象方法readWord(),另外系统还有一个子类ReadEnglishWord，该类的readWord()方法可以读取由英文单词组成的文本文件word.txt，
+2. 现在需要改进系统，能够使用ReadWord调用readWord()方法读取其中的单词，并且也能够得到单词的汉语解释，甚至可以得到英文例句，请满足不同用户的需求。
+
+原来的类图
+
+![原来的图](../../image/decorator01.png)
+
+使用装饰模式扩展之后的类图
+
+![装饰后的图](../../image/decorator02.png)
+
+
+答案见example目录
+
