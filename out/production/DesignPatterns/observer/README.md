@@ -132,3 +132,21 @@ public class UniversityStudent implements Observer {
 ## 完整代码
 [观察者模式](https://github.com/guangxush/DesignPatterns/tree/master/src/observer)
 
+### 案例1
+
+抗洪指挥部希望按时得到天文站测量到的关于水流的信息，比如流量、流速等
+
+按照观察者模式，抗洪指挥部是一个具体的观察者，天文站是其依赖的一个具体主题
+
+### 案例2
+
+统计文本中的单词和数字
+
+1. 设计一个窗口，窗口有三个文本区
+2. 三个文本区中其中一个可以供用户编辑，其他两个不可编辑
+3. 当用户在可编辑的文本区进行编辑操作时，一个显示文本中出现的单词，一个显示文本中所包含的数字
+
+提示：
+
+使用Observable作为主题，使用Observer作为接口，具体主题是InputTextSubject是Observable类的子类，负责具体创建主题
+

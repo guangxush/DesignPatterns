@@ -120,5 +120,6 @@ public class Application {
 3. 要求Machine类有打开、关闭摄像头以及打开关闭照明灯的按钮
 
 类图如下
+![命令模式](../../image/command2.png)
 
 
