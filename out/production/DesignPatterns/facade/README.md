@@ -17,6 +17,101 @@
 - 外观只是提供一个更加简洁的界面，并不影响用户使用子系统
 - 子系统的任何类对其方法的内容进行修改，不影响外观类的代码
 
+### 代码
+
+计算广告字数
+```java
+public class CheckWord {
+    public final int basicAmount = 85;
+    String advertisement;
+    int amount;
+
+    public CheckWord(String advertisement) {
+        this.advertisement = advertisement;
+    }
+
+    public void setChargeAmount(){
+        amount = advertisement.length() + basicAmount;
+    }
+
+    public int getAmount(){
+        return amount;
+    }
+}
+
+```
+
+
+计算广告费用
+
+```java
+public class Charge {
+    public final int basicCharge = 12;
+    CheckWord checkWord;
+
+    public Charge(CheckWord checkWord) {
+        this.checkWord = checkWord;
+    }
+
+    public void giveCharge(){
+        int charge = checkWord.getAmount()*basicCharge;
+        System.out.println("广告费用："+charge+"元");
+    }
+}
+```
+
+广告排版
+```java
+public class TypeSeting {
+    String advertisement;
+
+    public TypeSeting(String advertisement) {
+        this.advertisement = advertisement;
+    }
+
+    public void typeSeting(){
+        System.out.println("广告排版格式");
+        System.out.println("**********");
+        System.out.println(advertisement);
+        System.out.println("**********");
+    }
+}
+```
+
+外观
+```java
+public class ClientServerFacade {
+    private CheckWord checkWord;
+    private Charge charge;
+    private TypeSeting typeSeting;
+    private String advertisement;
+
+    public ClientServerFacade(String advertisement) {
+        this.advertisement = advertisement;
+        checkWord = new CheckWord(advertisement);
+        charge = new Charge(checkWord);
+        typeSeting = new TypeSeting(advertisement);
+    }
+
+    public void doAdversitisement(){
+        checkWord.setChargeAmount();
+        charge.giveCharge();
+        typeSeting.typeSeting();
+    }
+}
+```
+
+使用
+```java
+public class Application {
+    public static void main(String[] args) {
+        ClientServerFacade facade;
+        String advertisement = "电脑1233元，请联系12334";
+        facade = new ClientServerFacade(advertisement);
+        facade.doAdversitisement();
+    }
+}
+```
 ### 适用场景
 
 - 对复杂的子系统，需要为用户提供一个简单的交互操作
