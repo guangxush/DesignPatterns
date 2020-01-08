@@ -354,3 +354,8 @@ public class Application {
 
 ## 5. 源码参考
 由于篇幅原因，只显示了一个子类，完整的系统调用请参考[链接](https://github.com/guangxush/DesignPatterns/tree/master/src)。
+
+
+## 抽象工厂模式案例
+
+用户在银行存款后，用户将得到银行给予的存款凭证，该凭证是加盖了业务公章的明细，但是不同银行的名称不同，形状也不同，使用抽象工厂模式为用户提供存款凭证
