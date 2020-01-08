@@ -101,6 +101,98 @@ class Rectangle implements Cloneable {
 具体的实现类图
 ![](../../image/clone.png)
 
+### 代码
+
+抽象原型
+```java
+public interface Prototype {
+    Object cloneMe() throws CloneNotSupportedException;
+}
+```
+
+具体原型
+Cubic
+```java
+public class Cubic implements Prototype, Cloneable{
+    double  length,width,height;
+    Cubic(double a,double b,double c){
+        length=a;
+        width=b;
+        height=c;
+    }
+    @Override
+    public Object cloneMe() throws CloneNotSupportedException{
+        //调用从Object类继承的clone()方法
+        Cubic object=(Cubic)clone();
+        return object;
+    }
+}
+
+```
+
+Goat
+```java
+public class Goat implements Prototype, Serializable {
+    StringBuffer color;
+
+    public void setColor(StringBuffer c) {
+        color = c;
+    }
+
+    public StringBuffer getColor() {
+        return color;
+    }
+
+    @Override
+    public Object cloneMe() throws CloneNotSupportedException { //实现接口中的方法
+        Object object = null;
+        try {
+            ByteArrayOutputStream outOne = new ByteArrayOutputStream();
+            ObjectOutputStream outTwo = new ObjectOutputStream(outOne);
+            outTwo.writeObject(this);     //将原型对象写入对象输出流
+            ByteArrayInputStream inOne =
+                    new ByteArrayInputStream(outOne.toByteArray());
+            ObjectInputStream inTwo = new ObjectInputStream(inOne);
+            object = inTwo.readObject();    //创建新的对象：原型的复制品
+        } catch (Exception event) {
+            System.out.println(event);
+        }
+        return object;
+    }
+}
+```
+
+模式的使用
+
+```java
+public class Application {
+    public static void main(String args[]) {
+        Cubic cubic = new Cubic(12, 20, 66);
+        System.out.println("cubic的长、宽和高：");
+        System.out.println(cubic.length + "," + cubic.width + "," + cubic.height);
+        try {
+            Cubic cubicCopy = (Cubic) cubic.cloneMe();
+            System.out.println("cubicCopy的长、宽和高：");
+            System.out.println(cubicCopy.length + "," + cubicCopy.width + ","
+                    + cubicCopy.height);
+        } catch (CloneNotSupportedException exp) {
+        }
+        Goat goat = new Goat();
+        goat.setColor(new StringBuffer("白颜色的山羊"));
+        System.out.println("goat是" + goat.getColor());
+        try {
+            Goat goatCopy = (Goat) goat.cloneMe();
+            System.out.println("goatCopy是" + goatCopy.getColor());
+            System.out.println("goatCopy将自己的颜色改变成黑色");
+            goatCopy.setColor(new StringBuffer("黑颜色的山羊"));
+            System.out.println("goat仍然是" + goat.getColor());
+            System.out.println("goatCopy是" + goatCopy.getColor());
+        } catch (CloneNotSupportedException exp) {
+        }
+    }
+}
+```
+
 ### 优点
 
 - 创建新的类需要很大的代价时，需要复制一个已有的实例提高创建的效率
