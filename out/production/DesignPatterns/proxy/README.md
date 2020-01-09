@@ -96,7 +96,161 @@ public class Application {
 
 ### Java在RMI中如何使用代理模式
 
+服务器端
+```java
+public interface RemoteSubject extends Remote {
+    double getArea() throws RemoteException;
+}
+```
 
+```java
+public class RemoteConcreteSubject extends UnicastRemoteObject implements RemoteSubject {
+    double width, height;
+
+    RemoteConcreteSubject(double width, double height) throws RemoteException {
+        this.width = width;
+        this.height = height;
+    }
+
+    @Override
+    public double getArea() throws RemoteException {
+        return width * height;
+    }
+}
+```
+
+```java
+public class RegisterRemoteObject {
+    public static void main(String args[]) {
+        try {
+            RemoteConcreteSubject remoteObject =
+                    new RemoteConcreteSubject(12, 88);
+            Naming.rebind("rmi://127.0.0.1/rect", remoteObject);
+            System.out.println("ready for you server...");
+        } catch (Exception exp) {
+            System.out.println(exp);
+        }
+    }
+}
+```
+
+
+客户端
+
+```java
+public class ClientApplication {
+    public static void main(String[] args) {
+        try {
+            Remote remoteObject = Naming.lookup("rmi://127.0.0.1/rect");
+            RemoteSubject remoteSubject = (RemoteSubject) remoteObject;
+            double area = remoteSubject.getArea();
+            System.out.println("面积：" + area);
+        } catch (Exception exp) {
+            System.out.println(exp);
+        }
+    }
+}
+```
+
+代码见example
+
+### 虚拟代理
+
+创建对象时间太长的时候，使用代理类
+
+代理角色
+```java
+public class ImageIconProxy implements Icon, Runnable {
+    ImageIcon icon;
+    URL imageURL;
+    Thread loadImage;
+    Component c;
+    Graphics g;
+    int x, y, w = 200, h = 200;
+
+    ImageIconProxy(URL imageURL) {
+        this.imageURL = imageURL;
+        loadImage = new Thread(this);
+    }
+
+    @Override
+    public int getIconHeight() {
+        if (icon != null)
+            h = icon.getIconHeight();
+        return h;
+    }
+
+    @Override
+    public int getIconWidth() {
+        if (icon != null)
+            w = icon.getIconWidth();
+        return w;
+    }
+
+    @Override
+    public void paintIcon(Component c, Graphics g, int x, int y) {
+        if (icon != null) {
+            if (icon.getImageLoadStatus() == MediaTracker.COMPLETE)
+                icon.paintIcon(c, g, x, y);
+            else
+                doWork(c, g, x, y);
+        } else
+            doWork(c, g, x, y);
+    }
+
+    private void doWork(Component c, Graphics g, int x, int y) {
+        g.drawString("请稍等...", 200, 150);
+        this.c = c;
+        this.g = g;
+        this.x = x;
+        this.y = y;
+        if (!loadImage.isAlive()) {
+            loadImage = new Thread(this);
+        }
+        try {
+            loadImage.start();
+        } catch (Exception exp) {
+        }
+    }
+
+    @Override
+    public void run() {
+        try {
+            icon = new ImageIcon(imageURL);
+            if (icon.getImageLoadStatus() == MediaTracker.COMPLETE)
+                c.repaint();
+        } catch (Exception exp) {
+        }
+    }
+}
+```
+
+应用程序
+```java
+public class Application extends JFrame {
+    ImageIconProxy icon;
+    JButton button;
+
+    Application() {
+        try {
+            icon = new ImageIconProxy(new URL("http://127.0.0.1:8080/tv.jpg"));
+        } catch (Exception exp) {
+        }
+        button = new JButton();
+        add(button, BorderLayout.CENTER);
+        button.setIcon(icon);
+        setSize(400, 600);
+        setVisible(true);
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+    }
+
+    public static void main(String args[]) {
+        new Application();
+    }
+}
+```
+
+代码见example1
 
 ### 优缺点
 
@@ -114,5 +268,7 @@ public class Application {
 ### 案例
 
 使用远程代理让用户使用远程机器阅读文件内容
+
+代码见example2
 
 
