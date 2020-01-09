@@ -40,7 +40,7 @@ GoF《Design Patterns: Elements of Reusable Object-Oriented Software》
 如果类中的方法是一组相关的行为，那么该类是高内聚的；低耦合是尽量不要让一个类还有太多其他类的实例引用
 
 
-#### UML类图
+### UML类图
 
 类图：\+表示public \#表示protected \-表示private
 
@@ -77,6 +77,19 @@ A类中某个方法的参数是用B类来声明的变量或者某个方法返回
 如果一个类实现了另一个类的接口，那么类和接口属于实现关系，称类实现了接口
 
 ![实现关系](./image/implement.png)
+
+
+### 模式分类与介绍
+
+#### 创建型模式
+
+[工厂模式](./src/factory/README.md)
+
+#### 行为型模式
+
+#### 结构型模式
+
+
 
 
 
