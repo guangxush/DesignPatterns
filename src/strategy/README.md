@@ -9,7 +9,7 @@
 
 ## 代码设计
 设计一个计算成绩的接口
-```
+```java
 public interface ComputableStrategy {
     double computer(double[] a);
 }
@@ -17,7 +17,7 @@ public interface ComputableStrategy {
 
 代码采用了很多种计算成绩的方法，表示不同的策略
 这里只列举一个策略一
-```
+```java
 public class StrategyOne implements ComputableStrategy{
     @Override
     public double computer(double[] a) {
@@ -32,7 +32,7 @@ public class StrategyOne implements ComputableStrategy{
 ```
 
 context根据传入的策略选择合适的计算方法
-```
+```java
 public class GymnasticsContext {
     ComputableStrategy strategy;
     public void setStrategy(ComputableStrategy strategy){
@@ -48,7 +48,7 @@ public class GymnasticsContext {
 }
 ```
 具体使用
-```
+```java
 public class Application {
     public static void main(String[] args) {
         GymnasticsContext context = new GymnasticsContext();

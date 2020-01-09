@@ -9,7 +9,7 @@
 
 这里有一个水果类，水果类下面有不同的子类实现
 Fruit:
-```
+```java
 public interface Fruit {
     /**
      * 生长
@@ -28,7 +28,7 @@ public interface Fruit {
 }
 ```
 Apple(其他以此类推，不再一一列出)
-```
+```java
 public class Apple implements Fruit{
     /**
      * 树龄
@@ -65,7 +65,7 @@ public class Apple implements Fruit{
 }
 ```
 最后创建一个园丁类，通过传入不同的水果属性，判断水果的类型进行创建，这是典型的静态工厂模式。
-```
+```java
 public class FruitGardener {
     /**
      * 静态工厂方法
@@ -110,7 +110,7 @@ public class FruitGardener {
 工厂模式存在四个角色：抽象产品、具体产品、构造者、具体构造者
 这里采用一个简单的例子去说明
 抽象产品类：PenCore 钢笔：颜色+书写
-```
+```java
 public abstract class PenCore {
 
     public String color;
@@ -120,7 +120,7 @@ public abstract class PenCore {
 }
 ```
 具体产品类：黑色钢笔：设置颜色+书写文字
-```
+```java
 public class BlackPenCore extends PenCore{
 
     public BlackPenCore(){
@@ -134,7 +134,7 @@ public class BlackPenCore extends PenCore{
 }
 ```
 构造者：BallPen: 返回一个钢笔对象
-```
+```java
 public abstract class BallPen {
     BallPen(){
         System.out.println("create the pen with the "+ getPenCore().color+".");
@@ -145,7 +145,7 @@ public abstract class BallPen {
 
 ```
 具体构造者：BlackBallPen：返回具体的钢笔对象
-```
+```java
 public class BlackBallPen extends BallPen{
 
     @Override
@@ -155,7 +155,7 @@ public class BlackBallPen extends BallPen{
 }
 ```
 模式的具体使用
-```
+```java
 public class Application {
     public static void main(String[] args) {
         PenCore penCore;
@@ -174,7 +174,7 @@ public class Application {
 }
 ```
 运行结果：
-```
+```text
 create the pen with the blue.
 write with blue: 你好
 create the pen with the red.
@@ -196,7 +196,7 @@ write with black: ni hao!
 ![](https://github.com/guangxush/iTechHeart/blob/master/image/DesignPatterns/factory6.png)
 举个例子，两个抽象产品一个裤子一个上衣：
 裤子抽象产品：
-```
+```java
 public interface Trousers {
     int getWaistSize();
     int getHeight();
@@ -204,7 +204,7 @@ public interface Trousers {
 }
 ```
 上衣抽象产品
-```
+```java
 public interface UpperClothes {
     int getChestSize();
     int getHeight();
@@ -212,7 +212,7 @@ public interface UpperClothes {
 }
 ```
 裤子分为西裤和牛仔裤，这里只显示西裤：
-```
+```java
 public class WesternTrousers implements Trousers{
 
     private int waistSize;
@@ -245,7 +245,7 @@ public class WesternTrousers implements Trousers{
 
 ```
 上衣分为牛仔上衣和西装，这里只写西装
- ```
+ ```java
 public class WesternUpperClothes implements UpperClothes {
 
     private int chestSize;
@@ -277,14 +277,14 @@ public class WesternUpperClothes implements UpperClothes {
 }
 ```
 此时创建抽象工厂，具有创建上衣和裤子的方法
-```
+```java
 public interface ClothesFactory {
     UpperClothes createUpperClothes(int chestSize, int height);
     Trousers createTrousers(int waitSize, int height);
 }
 ```
 具体工厂包括两个，北京的西装工厂和上海的牛仔工厂，这里列举北京的西装工厂
-```
+```java
 public class BeijingClothesFactory implements ClothesFactory{
     @Override
     public UpperClothes createUpperClothes(int chestSize, int height) {
@@ -298,7 +298,7 @@ public class BeijingClothesFactory implements ClothesFactory{
 }
 ```
 最后设置服装店，输入人的信息，可以创建具体的服装
-```
+```java
 public class Shop {
     UpperClothes clothes;
     Trousers trousers;
@@ -322,7 +322,7 @@ public class Shop {
 
 ```
 最后，服装店可以对衣服进行定制
-```
+```java
 public class Application {
     public static void main(String[] args) {
         Shop shop = new Shop();
@@ -334,7 +334,7 @@ public class Application {
 }
 ```
 打印结果如下：
-```
+```text
 <套装信息>
 北京牌西服上衣 
 胸围：110
