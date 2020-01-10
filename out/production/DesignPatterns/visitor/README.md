@@ -16,8 +16,131 @@
 
 公司考核若干大学生和研究生，决定是否录用，大学生和研究生都有自己的成绩，但是不能依据他们自己的成绩制定录用标准，录用标准必须由公司制定
 
+抽象角色是Student
+```java
+public interface Student {
+    void accept(Visitor v);
+}
+```
+
+具体元素是Undergraduate和GraduateStudent
+
+```java
+public class Undergraduate implements Student {
+    double math, english;    //成绩
+    String name;
+
+    Undergraduate(String name, double math, double english) {
+        this.name = name;
+        this.math = math;
+        this.english = english;
+    }
+
+    public double getMath() {
+        return math;
+    }
+
+    public double getEnglish() {
+        return english;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    @Override
+    public void accept(Visitor v) {
+        v.visit(this);
+    }
+}
+```
 
 
+```java
+public class GraduateStudent implements Student {
+    double math, english, physics;    //成绩
+    String name;
+
+    GraduateStudent(String name, double math, double english, double physics) {
+        this.name = name;
+        this.math = math;
+        this.english = english;
+        this.physics = physics;
+    }
+
+    public double getMath() {
+        return math;
+    }
+
+    public double getEnglish() {
+        return english;
+    }
+
+    public double getPhysics() {
+        return physics;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    @Override
+    public void accept(Visitor v) {
+        v.visit(this);
+    }
+}
+```
+
+抽象访问者
+
+```java
+public interface Visitor {
+    void visit(Undergraduate stu);
+    void visit(GraduateStudent stu);
+}
+```
+
+实际访问者：公司
+```java
+public class Company implements Visitor {
+    @Override
+    public void visit(Undergraduate stu) {
+        double math = stu.getMath();
+        double english = stu.getEnglish();
+        if (math > 80 && english > 90)
+            System.out.println(stu.getName() + "被录用");
+    }
+
+    @Override
+    public void visit(GraduateStudent stu) {
+        double math = stu.getMath();
+        double english = stu.getEnglish();
+        double physics = stu.getPhysics();
+        if (math > 80 && english > 90 && physics > 70)
+            System.out.println(stu.getName() + "被录用");
+    }
+}
+```
+
+最终使用
+```java
+public class Application {
+    public static void main(String args[]) {
+        Visitor visitor = new Company();
+        ArrayList<Student> studentList = new ArrayList<>();
+        studentList.add(new Undergraduate("张三", 67, 88));
+        studentList.add(new Undergraduate("李四", 90, 98));
+        studentList.add(new Undergraduate("王五", 85, 92));
+        studentList.add(new GraduateStudent("小明", 88, 70, 87));
+        studentList.add(new GraduateStudent("小红", 90, 95, 82));
+        Iterator<Student> iter = studentList.iterator();
+        while (iter.hasNext()) {
+            Student stu = iter.next();
+            stu.accept(visitor);
+        }
+    }
+}
+```
 
 ### 优缺点
 
@@ -31,4 +154,9 @@
 - 需要对集合中的对象给出很多不同且不相关的操作，而又不想修改对象的类
 
 ### 案例
+
+有若干人员的体检表，每张体检表上记载着某人的体检数据，但是提交表本身不可以用一个方法来标明不同行业的体检标准，现在有军队和工厂的负责人来审阅体检表
+请检测体检表中的数据是否符合军人或者工人的标准
+
+代码见example
 
