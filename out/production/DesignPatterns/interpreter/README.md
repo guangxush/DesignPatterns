@@ -3,14 +3,56 @@
 
 
 ### 结构
-- 抽象表达式（AbstractExpression） 
-- 终结符表达式子（TerminalExpression） 
-- 非终结符表达式子（NonterminalExpression） 
-- 上下文（Context） 
+- 抽象表达式（AbstractExpression） 负责定义抽象的解释角色
+- 终结符表达式子（TerminalExpression） 实现AbstractExpression接口，该类将接口中的解释操作实现为与文法中的终结符相关联的操作
+- 非终结符表达式子（NonterminalExpression） 实现AbstractExpression的类，为文法的非终结符实现解释操作
+- 上下文（Context） 包含解释器之外的一些全局信息
 
 ![](../../image/interpreter.png)
 
+结构描述
+1. 解析出语句的动作标记token
+2. 将标记规约为动作action
+3. 执行动作
+
 ### 代码
+
+简单的英文翻译器
+
+抽象表达式
+Node
+```java
+
+```
+
+终结符表达式
+```java
+
+```
+
+```java
+
+```
+
+```java
+
+```
+
+非终结符表达式
+```java
+
+```
+
+上下文
+```java
+
+```
+
+应用
+```java
+
+```
+
 
 ### 优缺点
 - 将每一个语法规则表示成一个类，方便于实现简单的语言。
@@ -23,3 +65,5 @@
 - 如果文法过于复杂，那么过多的文法规则很难维护出所给的类
 
 ### 案例
+
+
