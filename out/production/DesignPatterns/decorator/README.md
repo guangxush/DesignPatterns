@@ -15,13 +15,13 @@
 
 ![代码结构](https://github.com/guangxush/iTechHeart/blob/master/image/DesignPatterns/decorator2.png)
 Bird
-```
+```java
 public abstract class Bird {
     public abstract int fly();
 }
 ```
 Sparrow
-```
+```java
 public class Sparrow extends Bird{
     public final int DISTANCE = 50;
 
@@ -32,7 +32,7 @@ public class Sparrow extends Bird{
 }
 ```
 Decorator
-```
+```java
 public abstract class Decorator extends Bird {
     protected Bird bird;
     public Decorator(){
@@ -45,7 +45,7 @@ public abstract class Decorator extends Bird {
 }
 ```
 SparrowDecorator
-```
+```java
 public class SparrowDecorator extends Decorator{
 
     public final int DISTANCE = 50;
@@ -73,7 +73,7 @@ public class SparrowDecorator extends Decorator{
 }
 ```
 装饰模式的调用：
-```
+```java
 public class Application {
     public void needBird(Bird bird) {
         int flyDistance = bird.fly();

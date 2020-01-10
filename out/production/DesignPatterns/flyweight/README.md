@@ -130,7 +130,7 @@ public class Car {
 ```java
 public class Application {
     public static void main(String args[]) {
-        FlyweightFactroy factroy = FlyweightFactroy.getFactroy();
+        FlyweightFactroy factory = FlyweightFactroy.getFactroy();
         double width = 1.82, height = 1.47, length = 5.12;
         String key = "" + width + "#" + height + "#" + length;
         Flyweight flyweight = factroy.getFlyweight(key);

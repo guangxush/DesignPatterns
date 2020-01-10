@@ -23,7 +23,7 @@
 ## 代码实现
 以下是一个简单的求职者订阅工作中心的观察者模式，观察者通过notify给订阅了信息的求职者发送信息。
 Subject
-```
+```java
 public interface Subject {
 
     void addObserve(Observer observer);
@@ -35,7 +35,7 @@ public interface Subject {
 ```
 
 SeekJobCenter
-  ```
+```java
 public class SeekJobCenter implements Subject {
 
     private String mess;
@@ -85,13 +85,13 @@ public class SeekJobCenter implements Subject {
 }
 ```
 Observe
-```
+```java
 public interface Observer {
     public void hearTelephone(String heardMess);
 }
 ```
 UniversityStudent
-```
+```java
 public class UniversityStudent implements Observer {
 
     private Subject subject;
