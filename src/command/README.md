@@ -38,6 +38,7 @@ public interface Command {
 ```java
 public class ConcreteCommand implements Command{
 
+    //含有接受者的引用
     CompanyArmy army;
 
     public ConcreteCommand(CompanyArmy companyArmy){
@@ -58,6 +59,7 @@ public class ConcreteCommand implements Command{
 请求者
 ```java
 public class ArmySuperior {
+    // 存放具体命令的引用
     Command command;
 
     public void setCommand(Command command){
