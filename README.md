@@ -164,7 +164,6 @@ Visitor Pattern: Represent an operation to be performed on the elements of an ob
           
 Adapter Pattern(Another Name: Wrapper): Convert the interface of a class into another interface clients expect. Adapter lets classes work together that couldn't otherwise because of incompatible interfaces. 
 
-
 [组合模式](./src/composite/README.md) 将对象组合成数形结构以表示“部分-整体”的层次结构。Composite使得用户对单个对象和组合对象的使用具有一致性。
          
 Composite Pattern: Compose objects into tree structures to represent part-whole hierarchies. Composite lets clients treat individual objects and compositions of objects uniformly. 
