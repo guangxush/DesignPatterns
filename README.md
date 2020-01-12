@@ -192,9 +192,9 @@ Bridge Pattern(Another Name: Handle-Body): Decouple an abstraction from its impl
          
 Decorator Pattern(Another Name: Wrapper): Attach additional responsibilities to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality.
 
+### 重构
 
-
-
+[重构原则](./src/refactor/README.md)
 
 
 
