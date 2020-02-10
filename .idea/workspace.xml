@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f48477f2-d033-41f1-95b9-6ddfdcdd5d24" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/architecture/大型网站架构模式.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="f48477f2-d033-41f1-95b9-6ddfdcdd5d24" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,8 +30,8 @@
         <entry file="file://$PROJECT_DIR$/src/architecture/大型网站架构模式.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="328">
-                <caret line="144" lean-forward="true" selection-start-line="144" selection-end-line="144" />
+              <first_editor relative-caret-position="2898">
+                <caret line="138" column="12" lean-forward="true" selection-start-line="138" selection-start-column="12" selection-end-line="138" selection-end-column="12" />
               </first_editor>
               <second_editor />
             </state>
@@ -452,16 +449,15 @@
       <workItem from="1578107652928" duration="35726000" />
       <workItem from="1578367094977" duration="59184000" />
       <workItem from="1578555634633" duration="32305000" />
-      <workItem from="1581221895901" duration="12632000" />
+      <workItem from="1581221895901" duration="12800000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="178663000" />
+    <option name="totallyTimeSpent" value="178831000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="950" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.20695971" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -480,7 +476,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49948508" visible="true" weight="0.2902098" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49948508" visible="true" weight="0.2902098" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5005149" side_tool="true" weight="0.32983682" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32983682" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -1019,8 +1015,8 @@
     <entry file="file://$PROJECT_DIR$/src/architecture/大型网站架构模式.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="328">
-            <caret line="144" lean-forward="true" selection-start-line="144" selection-end-line="144" />
+          <first_editor relative-caret-position="2898">
+            <caret line="138" column="12" lean-forward="true" selection-start-line="138" selection-start-column="12" selection-end-line="138" selection-end-column="12" />
           </first_editor>
           <second_editor />
         </state>
