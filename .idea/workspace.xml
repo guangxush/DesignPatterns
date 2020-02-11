@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f48477f2-d033-41f1-95b9-6ddfdcdd5d24" name="Default Changelist" comment="" />
+    <list default="true" id="f48477f2-d033-41f1-95b9-6ddfdcdd5d24" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/architecture/大型网站核心架构要素.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,12 +29,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/architecture/大型网站架构模式.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="2898">
-                <caret line="138" column="12" lean-forward="true" selection-start-line="138" selection-start-column="12" selection-end-line="138" selection-end-column="12" />
+              <first_editor relative-caret-position="210">
+                <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/architecture/大型网站核心架构要素.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="181">
+                <caret line="59" column="19" selection-end-line="75" />
               </first_editor>
               <second_editor />
             </state>
@@ -44,18 +59,6 @@
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="252">
                 <caret line="12" column="33" selection-start-line="12" selection-end-line="12" selection-end-column="33" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/observer/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="3192">
-                <caret line="152" selection-start-line="152" selection-end-line="152" />
               </first_editor>
               <second_editor />
             </state>
@@ -160,7 +163,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/flyweight/example/Application.java" />
         <option value="$PROJECT_DIR$/src/flyweight/README.md" />
         <option value="$PROJECT_DIR$/src/flyweight/FlyweightFactroy.java" />
         <option value="$PROJECT_DIR$/src/flyweight/FlyweightFactory.java" />
@@ -211,10 +213,12 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/architecture/大型网站架构演化.md" />
         <option value="$PROJECT_DIR$/src/architecture/大型网站架构模式.md" />
+        <option value="$PROJECT_DIR$/src/architecture/大型网站核心架构要素.md" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="16" />
     <option name="y" value="23" />
     <option name="width" value="1680" />
     <option name="height" value="950" />
@@ -449,15 +453,16 @@
       <workItem from="1578107652928" duration="35726000" />
       <workItem from="1578367094977" duration="59184000" />
       <workItem from="1578555634633" duration="32305000" />
-      <workItem from="1581221895901" duration="12800000" />
+      <workItem from="1581221895901" duration="15980000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="178831000" />
+    <option name="totallyTimeSpent" value="182011000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="950" extended-state="6" />
+    <frame x="3" y="23" width="1680" height="950" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.20695971" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -476,7 +481,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49948508" visible="true" weight="0.2902098" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49948508" visible="true" weight="0.2902098" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5005149" side_tool="true" weight="0.32983682" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32983682" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -519,13 +524,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/visitor/Company.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="23" column="1" lean-forward="true" selection-start-line="6" selection-end-line="23" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/visitor/Application.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
@@ -1015,8 +1013,18 @@
     <entry file="file://$PROJECT_DIR$/src/architecture/大型网站架构模式.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="2898">
-            <caret line="138" column="12" lean-forward="true" selection-start-line="138" selection-start-column="12" selection-end-line="138" selection-end-column="12" />
+          <first_editor relative-caret-position="210">
+            <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/architecture/大型网站核心架构要素.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="181">
+            <caret line="59" column="19" selection-end-line="75" />
           </first_editor>
           <second_editor />
         </state>
