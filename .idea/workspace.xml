@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f48477f2-d033-41f1-95b9-6ddfdcdd5d24" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/architecture/大型网站架构分析.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/architecture/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -17,12 +17,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/architecture/大型网站架构分析.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="766">
-                <caret line="257" selection-start-line="257" selection-end-line="257" />
+              <first_editor relative-caret-position="155">
+                <caret line="21" column="12" selection-start-line="21" selection-end-line="22" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/architecture/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="517">
+                <caret line="47" selection-start-line="47" selection-end-line="47" />
               </first_editor>
               <second_editor />
             </state>
@@ -75,7 +87,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/decorator/README.md" />
         <option value="$PROJECT_DIR$/src/visitor/Student.java" />
         <option value="$PROJECT_DIR$/src/visitor/Visitor.java" />
         <option value="$PROJECT_DIR$/src/visitor/Undergraduate.java" />
@@ -126,13 +137,14 @@
         <option value="$PROJECT_DIR$/src/architecture/可扩展架构.md" />
         <option value="$PROJECT_DIR$/src/architecture/安全性架构.md" />
         <option value="$PROJECT_DIR$/src/architecture/大型网站架构分析.md" />
+        <option value="$PROJECT_DIR$/src/architecture/README.md" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="761" />
+    <option name="x" value="686" />
     <option name="y" value="23" />
-    <option name="width" value="1131" />
+    <option name="width" value="1680" />
     <option name="height" value="950" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -369,18 +381,18 @@
       <workItem from="1581503783027" duration="21608000" />
       <workItem from="1581735311936" duration="273000" />
       <workItem from="1581737888179" duration="9259000" />
-      <workItem from="1581773690929" duration="8406000" />
+      <workItem from="1581773690929" duration="10882000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="230188000" />
+    <option name="totallyTimeSpent" value="232664000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="761" y="23" width="1131" height="950" extended-state="0" />
+    <frame x="686" y="23" width="1680" height="950" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.2754821" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.15384616" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -397,7 +409,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4981685" weight="0.2902098" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4981685" visible="true" weight="0.2902098" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50183153" side_tool="true" weight="0.2902098" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32983682" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -440,13 +452,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/visitor/example/ArmyVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/visitor/example/FactoryVisitor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="455">
@@ -918,8 +923,18 @@
     <entry file="file://$PROJECT_DIR$/src/architecture/大型网站架构分析.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="766">
-            <caret line="257" selection-start-line="257" selection-end-line="257" />
+          <first_editor relative-caret-position="155">
+            <caret line="21" column="12" selection-start-line="21" selection-end-line="22" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/architecture/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="517">
+            <caret line="47" selection-start-line="47" selection-end-line="47" />
           </first_editor>
           <second_editor />
         </state>
