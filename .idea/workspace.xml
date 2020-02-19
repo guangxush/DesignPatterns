@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f48477f2-d033-41f1-95b9-6ddfdcdd5d24" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/architecture/架构真经.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/architecture/架构真经.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/architecture/架构真经.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -57,8 +57,8 @@
         <entry file="file://$PROJECT_DIR$/src/architecture/架构真经.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="133">
-                <caret line="132" column="34" lean-forward="true" selection-start-line="132" selection-start-column="34" selection-end-line="132" selection-end-column="34" />
+              <first_editor relative-caret-position="409">
+                <caret line="314" column="14" selection-start-line="314" selection-start-column="14" selection-end-line="314" selection-end-column="14" />
               </first_editor>
               <second_editor />
             </state>
@@ -178,7 +178,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="838" />
+    <option name="x" value="795" />
     <option name="y" value="23" />
     <option name="width" value="1163" />
     <option name="height" value="950" />
@@ -418,15 +418,15 @@
       <workItem from="1581735311936" duration="273000" />
       <workItem from="1581737888179" duration="9259000" />
       <workItem from="1581773690929" duration="11555000" />
-      <workItem from="1581941442952" duration="4754000" />
+      <workItem from="1581941442952" duration="9506000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="238091000" />
+    <option name="totallyTimeSpent" value="242843000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="838" y="23" width="1163" height="950" extended-state="0" />
+    <frame x="795" y="23" width="1163" height="950" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.15567766" />
@@ -973,8 +973,8 @@
     <entry file="file://$PROJECT_DIR$/src/architecture/架构真经.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="133">
-            <caret line="132" column="34" lean-forward="true" selection-start-line="132" selection-start-column="34" selection-end-line="132" selection-end-column="34" />
+          <first_editor relative-caret-position="409">
+            <caret line="314" column="14" selection-start-line="314" selection-start-column="14" selection-end-line="314" selection-end-column="14" />
           </first_editor>
           <second_editor />
         </state>
