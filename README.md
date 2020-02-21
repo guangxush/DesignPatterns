@@ -196,6 +196,10 @@ Decorator Pattern(Another Name: Wrapper): Attach additional responsibilities to 
 
 [重构原则](./src/refactor/README.md)
 
+### 架构真经
+
+[架构真经](./src/architecture/架构真经.md)
+
 
 ### 大型网站架构
 
