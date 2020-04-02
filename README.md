@@ -215,6 +215,10 @@ Decorator Pattern(Another Name: Wrapper): Attach additional responsibilities to 
 
 [领域驱动设计概览](./src/DDD/领域驱动设计概览.md)
 
+[架构风格与参考架构](./src/DDD/架构风格与参考架构.md)
+
+[架构模式实践](./src/DDD/架构模式实践.md)
+
 ### TDD
 
 [测试驱动开发](./src/TDD/README.md)
