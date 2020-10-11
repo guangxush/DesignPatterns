@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f48477f2-d033-41f1-95b9-6ddfdcdd5d24" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/DDD/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DDD/领域驱动设计的原则与实践.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TDD/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/uml/UML/UMLimage.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/uml/业务建模.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/uml/建模与UML.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/callback/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/callback/callback/Callback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/callback/callback/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/callback/callback/SubCallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/callback/callback/Template.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/callback/template/AbstractClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/callback/template/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/callback/template/ConcreteClassOne.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/callback/template/ConcreteClassTwo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -28,28 +31,6 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>MovieTwo</find>
-      <find>RentalThree</find>
-      <find>Movie</find>
-      <find>RedPen</find>
-      <find>BeijingClothesFactory</find>
-      <find>生成器模式</find>
-      <find>[a-z]-</find>
-      <find>-Rule</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>RentalThree</replace>
-      <replace>MovieThree</replace>
-      <replace>[a-z]</replace>
-      <replace>-Rule</replace>
-      <replace>- Rule</replace>
-    </replaceStrings>
-    <dirStrings>
-      <dir>$PROJECT_DIR$/src/composite/example</dir>
-    </dirStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -59,7 +40,6 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -67,6 +47,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/uml" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -224,11 +210,18 @@
       <workItem from="1582156736937" duration="157000" />
       <workItem from="1582168557493" duration="11581000" />
       <workItem from="1585046659171" duration="2321000" />
+      <workItem from="1602407379579" duration="1141000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="653" y="209" key="#com.intellij.ide.util.MemberChooser" timestamp="1602430898533">
+      <screen x="0" y="23" width="1680" height="946" />
+    </state>
+    <state x="653" y="209" key="#com.intellij.ide.util.MemberChooser/0.23.1680.946@0.23.1680.946" timestamp="1602430898533" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

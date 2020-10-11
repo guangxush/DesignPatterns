@@ -1,0 +1,12 @@
+package callback.template;
+
+/**
+ * @author: guangxush
+ * @create: 2020/10/11
+ */
+public class ConcreteClassOne extends AbstractClass{
+    @Override
+    protected void customOperation() {
+        // do custom things
+    }
+}
