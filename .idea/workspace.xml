@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f48477f2-d033-41f1-95b9-6ddfdcdd5d24" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/callback/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/callback/callback/Callback.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/callback/callback/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/callback/callback/SubCallback.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/callback/callback/Template.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/callback/template/AbstractClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/callback/template/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/callback/template/ConcreteClassOne.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/callback/template/ConcreteClassTwo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/callback/example/CallbackExample1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/callback/example/CallbackExample2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DesignPatterns/META-INF/DesignPatterns.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DesignPatterns/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DesignPatterns/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DesignPatterns/composite/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DesignPatterns/composite/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +41,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="ignore_missing_gitignore" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/uml" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -53,6 +49,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -73,26 +70,13 @@
       <recent name="$PROJECT_DIR$/src/state/example2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Application (2)">
+  <component name="RunManager" selected="Application.CallbackExample1">
     <configuration name="Application (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="builder.Application" />
       <module name="DesignPatterns" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="builder.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Application (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="memento.Application" />
-      <module name="DesignPatterns" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="memento.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -127,19 +111,6 @@
       </method>
     </configuration>
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="memento.example.Application" />
-      <module name="DesignPatterns" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="memento.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="observer.student.Application" />
       <module name="DesignPatterns" />
       <extension name="coverage">
@@ -165,20 +136,46 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CallbackExample1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="callback.example.CallbackExample1" />
+      <module name="DesignPatterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="callback.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CallbackExample2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="callback.example.CallbackExample2" />
+      <module name="DesignPatterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="callback.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.Application (3)" />
-      <item itemvalue="Application.Application" />
       <item itemvalue="Application.Application (4)" />
       <item itemvalue="Application.Application (5)" />
       <item itemvalue="Application.Application (2)" />
+      <item itemvalue="Application.CallbackExample1" />
+      <item itemvalue="Application.CallbackExample2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CallbackExample1" />
+        <item itemvalue="Application.CallbackExample2" />
         <item itemvalue="Application.Application (2)" />
         <item itemvalue="Application.Application (5)" />
         <item itemvalue="Application.Application (4)" />
-        <item itemvalue="Application.Application" />
-        <item itemvalue="Application.Application (3)" />
       </list>
     </recent_temporary>
   </component>
@@ -210,7 +207,8 @@
       <workItem from="1582156736937" duration="157000" />
       <workItem from="1582168557493" duration="11581000" />
       <workItem from="1585046659171" duration="2321000" />
-      <workItem from="1602407379579" duration="1141000" />
+      <workItem from="1602407379579" duration="1253000" />
+      <workItem from="1602516710788" duration="556000" />
     </task>
     <servers />
   </component>
@@ -222,6 +220,26 @@
       <screen x="0" y="23" width="1680" height="946" />
     </state>
     <state x="653" y="209" key="#com.intellij.ide.util.MemberChooser/0.23.1680.946@0.23.1680.946" timestamp="1602430898533" />
+    <state x="305" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1602516798717">
+      <screen x="0" y="23" width="1680" height="946" />
+    </state>
+    <state x="305" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1680.946@0.23.1680.946" timestamp="1602516798717" />
+    <state width="1638" height="252" key="GridCell.Tab.0.bottom" timestamp="1602517044158">
+      <screen x="0" y="23" width="1680" height="946" />
+    </state>
+    <state width="1638" height="252" key="GridCell.Tab.0.bottom/0.23.1680.946@0.23.1680.946" timestamp="1602517044158" />
+    <state width="1638" height="252" key="GridCell.Tab.0.center" timestamp="1602517044158">
+      <screen x="0" y="23" width="1680" height="946" />
+    </state>
+    <state width="1638" height="252" key="GridCell.Tab.0.center/0.23.1680.946@0.23.1680.946" timestamp="1602517044158" />
+    <state width="1638" height="252" key="GridCell.Tab.0.left" timestamp="1602517044157">
+      <screen x="0" y="23" width="1680" height="946" />
+    </state>
+    <state width="1638" height="252" key="GridCell.Tab.0.left/0.23.1680.946@0.23.1680.946" timestamp="1602517044157" />
+    <state width="1638" height="252" key="GridCell.Tab.0.right" timestamp="1602517044158">
+      <screen x="0" y="23" width="1680" height="946" />
+    </state>
+    <state width="1638" height="252" key="GridCell.Tab.0.right/0.23.1680.946@0.23.1680.946" timestamp="1602517044158" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
