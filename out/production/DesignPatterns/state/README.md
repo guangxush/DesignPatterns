@@ -123,3 +123,63 @@ public class Application {
 代码见example2
 
 
+### 案例分析
+
+传统开关状态的判断方法如下：
+
+```java
+if (state.euqals("bye")) state="hello";
+else if (state.euqals("hello")) state="hi";
+else if (state.euqals("hi")) state="bye";
+```
+
+这就是 "开关切换状态",是将state的状态从"hello"切换到"hi",再切换到""bye";在切换到"hello",好象一个旋转开关,这种状态改变就可以使用State模式了.
+
+如果单纯有上面一种将"hello"-->"hi"-->"bye"-->"hello"这一个方向切换,也不一定需要使用State模式,因为State模式会建立很多子类,复杂化,但是如果又发生另外一个行为:将上面的切换方向反过来切换,或者需要任意切换,就需要State了.
+
+```java
+public class Context{
+    private Color state=null;
+    
+    public void push(){
+       //如果当前red状态 就切换到blue
+       if (state==Color.red){
+           state=Color.blue;
+       }
+       //如果当前blue状态 就切换到green
+       else if (state==Color.blue){
+           state=Color.green;
+       }
+       //如果当前black状态 就切换到red
+       else if (state==Color.black){
+           state=Color.red;
+       }
+       //如果当前green状态 就切换到black
+       else if (state==Color.green){
+           state=Color.black;
+       }
+       Sample sample=new Sample(state);
+       sample.operate();
+    }
+    public void pull(){
+        //与push状态切换正好相反
+        if (state==Color.green){
+            state=Color.blue;
+        }else if (state==Color.black){
+            state=Color.green;
+        }else if (state==Color.blue){
+            state=Color.red;
+        }else if (state==Color.red){
+            state=Color.black;
+        }
+        Sample2 sample2=new Sample2(state);
+        sample2.operate(); 
+    }
+}
+```
+将上述方法改成状态机模式example3
+
+
+
+
+
