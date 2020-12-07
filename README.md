@@ -6,6 +6,34 @@
 
 GoF《Design Patterns: Elements of Reusable Object-Oriented Software》
 
+
+| 设计模式 | 释义 | 
+| :-----| :---- | 
+|[工厂模式](./src/factory/README.md)|定义一个用于创建对象的接口，让子类决定实例化哪一个类，工厂让一个类的实例化延迟到子类。|
+|[抽象工厂模式](./src/abstractfactory)|提供一个创建一系列或者相互依赖的对象的接口，而无须指定他们具体的类。|
+|[生成器模式](./src/builder/README.md)|将一个复杂的对象的构建与他的表示进行分离，使用同样的构建过程但可以创建不同的表示。|
+|[原型模式](./src/prototype/README.md)|用原型实例指定创建对象的种类，并且通过拷贝这些原型创建新的对象。|
+|[单例模式](./src/singleton/README.md)|保证一个类仅有一个实例，并提供一个访问它的全局访问点。|
+|[责任链模式](./src/chain/README.md)|使多个对象都有机会处理请求，从而避免请求的发送者和接收者之间的耦合关系。将这些对象连成一条链，并沿着这条链传递该请求，直到有一个对象处理它为止。|
+|[命令模式](./src/command/README.md)|将一个请求封装为一个对象，从而使你可用不同的请求对客户进行参数化；对请求排队或记录请求日志，以及支持可撤消的操作。|
+|[解释器模式](./src/interpreter/README.md)|给定一个语言，定义它的文法的一种表示，并定义一个解释器，这个解释器使用该表示来解释语言中的句子。|
+|[迭代器模式](./src/iterator/README.md)|提供一种方法顺序访问一个聚合对象中的各个元素，而又不需要暴露该对象的内部表示。|
+|[中介者模式](./src/mediator/README.md)|用一个中介对象来封装一系列的对象交互。中介者使各对象不需要显示地相互引用，从而使其耦合松散，而且可以独立地改变它们之间的交互。|
+|[备忘录模式](./src/memento/README.md)|在不破坏封装性的前提下，捕获一个对象的内部状态，并在该对象之外保存这个状态，这样以后就可将该对象恢复到原先保存的状态。|
+|[观察者模式](./src/observer/README.md)|定义对象间的一种一对多的依赖关系，当一个对象的状态发生变化时，所有依赖于它的对象都得到通知并被自动更新。|
+|[状态模式](./src/state/README.md)|允许一个对象在其内部状态改变时改变它的行为。对象看起来似乎修改了它的类。|
+|[策略模式](./src/strategy/README.md)|定义一系列算法，把它们一个个封装起来，并且使它们可相互替换。本模式使得算法可独立于使用它的客户而变化。|
+|[模版方法模式](./src/template/README.md)|定义一个操作中的算法的骨架，而将一些步骤延迟到子类中。模板方法使得子类可以不改变一个算法的结构即可重定义该算法的某些特定步骤。|
+|[访问者模式](./src/visitor/README.md)|表示一个作用于某对象结构中的各个元素的操作。它使你可以在不改变各个元素的类的前提下定义作用于这些元素的新操作。 |
+|[适配器模式](./src/adapter/README.md)|将一个类的接口转换成客户希望的另外一个接口。Adapter模式使得原本由于接口不兼容而不能一起工作的那些类可以一起工作。|
+|[组合模式](./src/composite/README.md)|将对象组合成数形结构以表示“部分-整体”的层次结构。Composite使得用户对单个对象和组合对象的使用具有一致性。|
+|[代理模式](./src/proxy/README.md)|为其他对象提供一种代理以控制对这个对象的访问。|
+|[享元模式](./src/flyweight/README.md)|运用共享技术有效地支持大量细粒度的对象。|
+|[外观模式](./src/facade/README.md)|为系统中的一组接口提供一个一致的界面，Façade模式定义了一个高层接口，这个接口使得这一子系统更加容易使用。|
+|[桥接模式](./src/bridge/README.md)|将抽象部分与它的实现部分分离，使得它们都可以独立地变化。|
+|[装饰模式](./src/decorator/README.md)|动态地给对象添加一些额外的职责。就功能来说装饰模式相比生成子类更为灵活。|
+
+
 ### 面向对象的几个基本原则
 
 #### 抽象类和接口
@@ -159,7 +187,6 @@ Template Method Pattern: Define the skeleton of an algorithm in an operation, de
 Visitor Pattern: Represent an operation to be performed on the elements of an objectstructure. Visitor lets you define a new operation without changing the classes of the elements on which it operates. 
 
 
-
 #### 结构型设计模式
 
 涉及如何组合类和对象以形成更大的结构，和类有关的结构型模式涉及如何合理的使用继承，和对象有关的结构型模式涉及如何使用组合
@@ -176,7 +203,7 @@ Composite Pattern: Compose objects into tree structures to represent part-whole 
          
 Proxy Pattern: Provide a surrogate or placeholder for another object to control access to it. 
 
-[享元模式](./src/flyweight/README.md)运用共享技术有效地支持大量细粒度的对象。
+[享元模式](./src/flyweight/README.md) 运用共享技术有效地支持大量细粒度的对象。
         
 Flyweight Pattern: Use sharing to support large numbers of fine-grained objects efficiently. 
 
@@ -184,7 +211,7 @@ Flyweight Pattern: Use sharing to support large numbers of fine-grained objects 
          
 Facade of Responsibility Pattern: Provide a unified interface to a set of interfaces in a subsystem.Facade defines a higher-level interface that makes the subsystem easier to use.
 
-[桥接模式]() 将抽象部分与它的实现部分分离，使得它们都可以独立地变化。
+[桥接模式](./src/bridge/README.md) 将抽象部分与它的实现部分分离，使得它们都可以独立地变化。
          
 Bridge Pattern(Another Name: Handle-Body): Decouple an abstraction from its implementation so that the two can vary independently. 
 
