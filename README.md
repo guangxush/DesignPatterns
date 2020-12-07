@@ -29,7 +29,7 @@ GoF《Design Patterns: Elements of Reusable Object-Oriented Software》
 |[组合模式](./src/composite/README.md)|将对象组合成数形结构以表示“部分-整体”的层次结构。Composite使得用户对单个对象和组合对象的使用具有一致性。|
 |[代理模式](./src/proxy/README.md)|为其他对象提供一种代理以控制对这个对象的访问。|
 |[享元模式](./src/flyweight/README.md)|运用共享技术有效地支持大量细粒度的对象。|
-|[外观模式](./src/facade/README.md)|为系统中的一组接口提供一个一致的界面，Façade模式定义了一个高层接口，这个接口使得这一子系统更加容易使用。|
+|[外观模式](./src/facade/README.md)|为系统中的一组接口提供一个一致的界面，Facade模式定义了一个高层接口，这个接口使得这一子系统更加容易使用。|
 |[桥接模式](./src/bridge/README.md)|将抽象部分与它的实现部分分离，使得它们都可以独立地变化。|
 |[装饰模式](./src/decorator/README.md)|动态地给对象添加一些额外的职责。就功能来说装饰模式相比生成子类更为灵活。|
 
