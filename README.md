@@ -8,7 +8,7 @@ GoF《Design Patterns: Elements of Reusable Object-Oriented Software》
 
 
 | 设计模式 | 释义 | 
-| :-----| :---- | 
+| :-----:| :---- | 
 |[工厂模式](./src/factory/README.md)|定义一个用于创建对象的接口，让子类决定实例化哪一个类，工厂让一个类的实例化延迟到子类。|
 |[抽象工厂模式](./src/abstractfactory)|提供一个创建一系列或者相互依赖的对象的接口，而无须指定他们具体的类。|
 |[生成器模式](./src/builder/README.md)|将一个复杂的对象的构建与他的表示进行分离，使用同样的构建过程但可以创建不同的表示。|
