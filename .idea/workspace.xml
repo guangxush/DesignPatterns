@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f48477f2-d033-41f1-95b9-6ddfdcdd5d24" name="Default Changelist" comment="" />
+    <list default="true" id="f48477f2-d033-41f1-95b9-6ddfdcdd5d24" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -190,7 +192,7 @@
       <workItem from="1602407379579" duration="1253000" />
       <workItem from="1602516710788" duration="1345000" />
       <workItem from="1602518158003" duration="20000" />
-      <workItem from="1607139001496" duration="8480000" />
+      <workItem from="1607139001496" duration="9438000" />
     </task>
     <servers />
   </component>
@@ -206,22 +208,26 @@
       <screen x="0" y="23" width="1680" height="946" />
     </state>
     <state x="305" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1680.946@0.23.1680.946" timestamp="1602516798717" />
-    <state width="1638" height="185" key="GridCell.Tab.0.bottom" timestamp="1607150875155">
+    <state width="1638" height="185" key="GridCell.Tab.0.bottom" timestamp="1609084297875">
       <screen x="0" y="23" width="1680" height="946" />
     </state>
-    <state width="1638" height="185" key="GridCell.Tab.0.bottom/0.23.1680.946@0.23.1680.946" timestamp="1607150875155" />
-    <state width="1638" height="185" key="GridCell.Tab.0.center" timestamp="1607150875154">
+    <state width="1638" height="185" key="GridCell.Tab.0.bottom/0.23.1680.946@0.23.1680.946" timestamp="1609084297875" />
+    <state width="1638" height="185" key="GridCell.Tab.0.center" timestamp="1609084297874">
       <screen x="0" y="23" width="1680" height="946" />
     </state>
-    <state width="1638" height="185" key="GridCell.Tab.0.center/0.23.1680.946@0.23.1680.946" timestamp="1607150875154" />
-    <state width="1638" height="185" key="GridCell.Tab.0.left" timestamp="1607150875153">
+    <state width="1638" height="185" key="GridCell.Tab.0.center/0.23.1680.946@0.23.1680.946" timestamp="1609084297874" />
+    <state width="1638" height="185" key="GridCell.Tab.0.left" timestamp="1609084297873">
       <screen x="0" y="23" width="1680" height="946" />
     </state>
-    <state width="1638" height="185" key="GridCell.Tab.0.left/0.23.1680.946@0.23.1680.946" timestamp="1607150875153" />
-    <state width="1638" height="185" key="GridCell.Tab.0.right" timestamp="1607150875154">
+    <state width="1638" height="185" key="GridCell.Tab.0.left/0.23.1680.946@0.23.1680.946" timestamp="1609084297873" />
+    <state width="1638" height="185" key="GridCell.Tab.0.right" timestamp="1609084297875">
       <screen x="0" y="23" width="1680" height="946" />
     </state>
-    <state width="1638" height="185" key="GridCell.Tab.0.right/0.23.1680.946@0.23.1680.946" timestamp="1607150875154" />
+    <state width="1638" height="185" key="GridCell.Tab.0.right/0.23.1680.946@0.23.1680.946" timestamp="1609084297875" />
+    <state x="543" y="251" width="598" height="490" key="find.popup" timestamp="1607354908502">
+      <screen x="0" y="23" width="1680" height="946" />
+    </state>
+    <state x="543" y="251" width="598" height="490" key="find.popup/0.23.1680.946@0.23.1680.946" timestamp="1607354908502" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
