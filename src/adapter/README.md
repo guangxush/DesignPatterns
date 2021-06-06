@@ -52,7 +52,7 @@ public class Application {
         outlet = wash;
         System.out.println("使用三相电源接通电流：");
         outlet.connectElectricCurrent();
-        
+
         TV tv = new TV();
         ThreeElectricAdapter adapter = new ThreeElectricAdapter(tv);
         outlet = adapter;
@@ -108,7 +108,7 @@ class TV implements TwoElectricOutlet{
 
 ```java
 public class ThreeAndTwoElectricAdapter implements ThreeElectricOutlet, TwoElectricOutlet{
-    
+
     TwoElectricOutlet twoElectricOutlet;
     ThreeElectricOutlet threeElectricOutlet;
 
@@ -140,7 +140,7 @@ public class ThreeAndTwoElectricAdapter implements ThreeElectricOutlet, TwoElect
 
 目标和适配者是完全解耦的关系
 
-满足"开闭原则"，当添加一个实现Adaptee接口的新类时，不必修改适配器就可以进行适配
+满足"开闭原则"，当添加一个实现Adapter接口的新类时，不必修改适配器就可以进行适配
 
 ### 案例
 
